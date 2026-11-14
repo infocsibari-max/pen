@@ -1,0 +1,177 @@
+/* ==========================================================================
+   C.S.I. · Assistente guidato per la prenotazione
+   Componente aggiunto al widget di prenotazione. Non modifica il design
+   system: usa solo i token già definiti in theme.css.
+   ========================================================================== */
+
+.csi-assist {
+  --assist-face: 56px;
+  display: block;
+  margin: 26px 0 4px;
+  font-family: var(--font);
+}
+
+.csi-assist[data-open="true"] .csi-assist-toggle { display: none; }
+.csi-assist[data-open="false"] .csi-assist-body { display: none; }
+
+.csi-assist-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.csi-assist-face {
+  width: var(--assist-face);
+  height: var(--assist-face);
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--primary);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.csi-assist-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.csi-assist-face.is-fallback img { display: none; }
+.csi-assist-face.is-fallback::after {
+  content: "CSI";
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.csi-assist-bubble {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 14px 44px 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.csi-assist-bubble::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 19px;
+  width: 10px;
+  height: 10px;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transform: rotate(45deg);
+}
+
+.csi-assist-name {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.csi-assist-msg {
+  margin: 5px 0 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--fg);
+  text-wrap: pretty;
+}
+
+.csi-assist-msg.is-new { animation: csi-assist-in .18s ease-out 1; }
+
+.csi-assist-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  background: #fff;
+  color: var(--fg);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.csi-assist-call[hidden] { display: none; }
+.csi-assist-call:hover { border-color: #b9ad95; background: #fffdf9; }
+
+.csi-assist-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.csi-assist-close:hover { background: var(--surface-2); color: var(--fg); }
+
+.csi-assist-close:focus-visible,
+.csi-assist-toggle:focus-visible,
+.csi-assist-call:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.csi-assist-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px 6px 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.csi-assist-toggle .csi-assist-face {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  box-shadow: none;
+}
+
+@keyframes csi-assist-in {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (max-width: 640px) {
+  .csi-assist { --assist-face: 48px; margin: 22px 0 2px; }
+  .csi-assist-body { gap: 10px; }
+  .csi-assist-bubble { padding: 12px 40px 12px 14px; }
+  .csi-assist-msg { font-size: 14.5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .csi-assist-msg.is-new { animation: none; }
+}
+
+@media print {
+  .csi-assist { display: none; }
+}

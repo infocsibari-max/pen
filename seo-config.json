@@ -19,87 +19,188 @@
   },
   "structuredData": {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Cosa include l'analisi gratuita del ricalcolo pensione?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Include la verifica della posizione contributiva: controlliamo i dati INPS, gli anni versati e il metodo di calcolo applicato. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno."
+        "@type": "Organization",
+        "@id": "https://csi-pensioni-rho.vercel.app#organizzazione",
+        "name": "Burdi Consulenza",
+        "url": "https://csi-pensioni-rho.vercel.app",
+        "telephone": "080847841",
+        "email": "info.csi.bari@gmail.com"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://csi-pensioni-rho.vercel.app#sede",
+        "name": "Burdi Consulenza",
+        "telephone": "080847841",
+        "email": "info.csi.bari@gmail.com",
+        "url": "https://csi-pensioni-rho.vercel.app/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Piazza Vittorio Emanuele 41",
+          "addressLocality": "Ceglie del Campo",
+          "postalCode": "70129",
+          "addressRegion": "BA",
+          "addressCountry": "IT"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bari"
+          },
+          {
+            "@type": "City",
+            "name": "Valenzano"
+          },
+          {
+            "@type": "City",
+            "name": "Adelfia"
+          },
+          {
+            "@type": "City",
+            "name": "Ceglie del Campo"
+          },
+          {
+            "@type": "City",
+            "name": "Loseto"
+          },
+          {
+            "@type": "City",
+            "name": "Carbonara"
+          },
+          {
+            "@type": "City",
+            "name": "Triggiano"
+          }
+        ],
+        "parentOrganization": {
+          "@id": "https://csi-pensioni-rho.vercel.app#organizzazione"
         }
       },
       {
-        "@type": "Question",
-        "name": "Quanto costa fare il ricalcolo della pensione a Bari?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Il primo contatto e la valutazione iniziale sono gratuiti. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno. Indichiamo documenti, tempi e passaggi prima di iniziare."
-        }
+        "@type": "Service",
+        "name": "Ricalcolo pensione inps",
+        "serviceType": "Ricalcolo Pensione",
+        "provider": {
+          "@id": "https://csi-pensioni-rho.vercel.app#organizzazione"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Bari"
+          },
+          {
+            "@type": "City",
+            "name": "Valenzano"
+          },
+          {
+            "@type": "City",
+            "name": "Adelfia"
+          },
+          {
+            "@type": "City",
+            "name": "Ceglie del Campo"
+          },
+          {
+            "@type": "City",
+            "name": "Loseto"
+          },
+          {
+            "@type": "City",
+            "name": "Carbonara"
+          },
+          {
+            "@type": "City",
+            "name": "Triggiano"
+          }
+        ],
+        "description": "Stai cercando ricalcolo pensione inps a Bari? Burdi Consulenza ti accompagna dall'analisi della posizione alla pratica completa, con un metodo semplice e trasparente. \n\nIl servizio di ricalcolo pensione inps serve a controllare che ogni dato sia corretto prima che diventi un problema: un controllo a",
+        "url": "https://csi-pensioni-rho.vercel.app/"
       },
       {
-        "@type": "Question",
-        "name": "Posso fare il ricalcolo della pensione anche se abito a Valenzano o Adelfia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sì, operiamo su tutto il territorio provinciale di Bari, inclusi Valenzano, Adelfia, Triggiano, Carbonara, Ceglie del Campo e Loseto. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quanto tempo ci vuole per ottenere il ricalcolo della pensione?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I tempi dipendono dalla completezza dei documenti e dalla risposta dell'INPS. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno. Indichiamo documenti, tempi e passaggi prima di iniziare."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ricalcolo pensione inps come fare?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basta prenotare una consulenza: raccogliamo i documenti, controlliamo i requisiti e prepariamo tutta la pratica, anche online. Poi la presentiamo per te e seguiamo l'iter fino alla risposta, tenendoti informato a ogni fase del percorso."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Come chiedere ricalcolo pensione inps?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basta prenotare una consulenza: raccogliamo i documenti, controlliamo i requisiti e prepariamo tutta la pratica, anche online. Poi la presentiamo per te e seguiamo l'iter fino alla risposta, tenendoti informato a ogni fase del percorso."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ricalcolo pensione inps ogni quanto?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "L'analisi richiede pochi giorni; la pratica completa dipende dalla risposta degli enti coinvolti e dai documenti disponibili. Ti aggiorniamo a ogni passaggio e monitoriamo le scadenze, così la pratica avanza senza intoppi fino all'esito."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Ricalcolo pensione inps quando?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "L'analisi richiede pochi giorni; la pratica completa dipende dalla risposta degli enti coinvolti e dai documenti disponibili. Ti aggiorniamo a ogni passaggio e monitoriamo le scadenze, così la pratica avanza senza intoppi fino all'esito."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quanto costa ricalcolo pensione inps a Bari?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La prima valutazione è gratuita: analizziamo la posizione e ti diamo un riscontro chiaro. Il costo della pratica completa dipende dalla complessità del caso e viene fissato prima con un preventivo scritto, così sai esattamente cosa aspettarti senza sorprese."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Come funziona ricalcolo pensione inps?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basta prenotare una consulenza: raccogliamo i documenti, controlliamo i requisiti e prepariamo tutta la pratica, anche online. Poi la presentiamo per te e seguiamo l'iter fino alla risposta, tenendoti informato a ogni fase del percorso."
-        }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Cosa include l'analisi gratuita del ricalcolo pensione?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Include la verifica della posizione contributiva: controlliamo i dati INPS, gli anni versati e il metodo di calcolo applicato. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto costa fare il ricalcolo della pensione a Bari?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il primo contatto e la valutazione iniziale sono gratuiti. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno. Indichiamo documenti, tempi e passaggi prima di iniziare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso fare il ricalcolo della pensione anche se abito a Valenzano o Adelfia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì, operiamo su tutto il territorio provinciale di Bari, inclusi Valenzano, Adelfia, Triggiano, Carbonara, Ceglie del Campo e Loseto. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo ci vuole per ottenere il ricalcolo della pensione?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I tempi dipendono dalla completezza dei documenti e dalla risposta dell'INPS. Operiamo a Bari, Valenzano, Adelfia. Prima valutazione gratuita con Burdi Consulenza, in ufficio o online. La verifica iniziale è gratuita e senza impegno. Indichiamo documenti, tempi e passaggi prima di iniziare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ricalcolo pensione inps come fare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basta prenotare una consulenza: raccogliamo i documenti, controlliamo i requisiti e prepariamo tutta la pratica, anche online. Poi la presentiamo per te e seguiamo l'iter fino alla risposta, tenendoti informato a ogni fase del percorso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come chiedere ricalcolo pensione inps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basta prenotare una consulenza: raccogliamo i documenti, controlliamo i requisiti e prepariamo tutta la pratica, anche online. Poi la presentiamo per te e seguiamo l'iter fino alla risposta, tenendoti informato a ogni fase del percorso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ricalcolo pensione inps ogni quanto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'analisi richiede pochi giorni; la pratica completa dipende dalla risposta degli enti coinvolti e dai documenti disponibili. Ti aggiorniamo a ogni passaggio e monitoriamo le scadenze, così la pratica avanza senza intoppi fino all'esito."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ricalcolo pensione inps quando?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L'analisi richiede pochi giorni; la pratica completa dipende dalla risposta degli enti coinvolti e dai documenti disponibili. Ti aggiorniamo a ogni passaggio e monitoriamo le scadenze, così la pratica avanza senza intoppi fino all'esito."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto costa ricalcolo pensione inps a Bari?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La prima valutazione è gratuita: analizziamo la posizione e ti diamo un riscontro chiaro. Il costo della pratica completa dipende dalla complessità del caso e viene fissato prima con un preventivo scritto, così sai esattamente cosa aspettarti senza sorprese."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come funziona ricalcolo pensione inps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basta prenotare una consulenza: raccogliamo i documenti, controlliamo i requisiti e prepariamo tutta la pratica, anche online. Poi la presentiamo per te e seguiamo l'iter fino alla risposta, tenendoti informato a ogni fase del percorso."
+            }
+          }
+        ]
       }
     ]
   },
@@ -172,5 +273,14 @@
       "ricalcolo pensione inps ogni quanto",
       "ricalcolo pensione inps quando"
     ]
+  },
+  "nap": {
+    "nome": "Burdi Consulenza",
+    "telefono": "080847841",
+    "email": "info.csi.bari@gmail.com",
+    "indirizzo": "Piazza Vittorio Emanuele 41",
+    "citta": "Ceglie del Campo",
+    "cap": "70129",
+    "provincia": "BA"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "name": "csi-pensioni",
+  "private": true,
+  "version": "1.0.2",
+  "description": "C.S.I. — Ricalcolo pensione: sito statico SEO-optimized + funzioni serverless OTP, PDF, invio documenti, health check",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16",
+    "pdfkit": "^0.15.0"
+  }
+}
